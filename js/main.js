@@ -39,13 +39,13 @@ function game() {
         }
     }
    
-    $('#numbers h2').text('Lista numeri generati:'+ ' ' + list);
+    $('h2').text('Lista numeri generati:'+ ' ' + list);
     if (list1.length > 0) {   
-        $('#numbers h3').text('Lista Numeri Trovati: ' + list1);
-        $('#numbers p').text('Hai azzeccato ' + cont + ' numeri su ' + list.length);
+        $('h3').text('Lista Numeri Trovati: ' + list1);
+        $('p').text('Hai azzeccato ' + cont + ' numeri su ' + list.length);
     } else {
-        $('#numbers h3').text('Hai perso!');
-        $('#numbers p').text('Non hai azzeccato nessun numero');
+        $('h3').text('Hai perso!');
+        $('p').text('Non hai azzeccato nessun numero');
     }
    /*  console.log(list);
     console.log(numeriUtente);
