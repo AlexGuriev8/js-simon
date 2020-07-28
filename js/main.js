@@ -20,6 +20,7 @@ setTimeout(game, 3000);
 function game() { 
     var list1 = [];
     var numeriUtente = [];
+    var cont = 0;
     while (numeriUtente.length < 5) {
         var numeri = parseInt(prompt('Inserisci i numeri visti precedentemente'));
         if (trovaElemento(numeriUtente, numeri)) {
@@ -28,14 +29,13 @@ function game() {
             numeriUtente.push(numeri);
         }
     }
-    var cont = 0;
+    
     for (var i = 0; i < list.length; i++) {
         for (var j = 0; j < numeriUtente.length; j++) {
             if (list[i] == numeriUtente[j]) {
                 list1.push(list[i]);
-                cont+=1;
+                cont++;
             }
-
         }
     }
    
@@ -51,7 +51,6 @@ function game() {
     console.log(numeriUtente);
     console.log(list1); */
  }
-
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
