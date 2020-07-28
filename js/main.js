@@ -24,7 +24,7 @@ function game() {
     while (numeriUtente.length < 5) {
         var numeri = parseInt(prompt('Inserisci i numeri visti precedentemente'));
         if (trovaElemento(numeriUtente, numeri)) {
-            prompt('Numero già inserito!! Inserisci un numero diverso !');
+            alert('Numero già inserito!! Inserisci un numero diverso !');
         }else {
             numeriUtente.push(numeri);
         }
